@@ -15,11 +15,32 @@
     </properties>
 
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-bulkhead -->
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-bulkhead</artifactId>
+            <version>2.0.2</version>
+        </dependency>
         <dependency>
             <groupId>io.github.resilience4j</groupId>
             <artifactId>resilience4j-circuitbreaker</artifactId>
             <version>0.12.1</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-retry -->
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-retry</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-timelimiter -->
+        <dependency>
+            <groupId>io.github.resilience4j</groupId>
+            <artifactId>resilience4j-timelimiter</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -33,6 +54,12 @@
             <version>5.3.1</version>
             <scope>test</scope>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.24.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
